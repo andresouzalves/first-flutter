@@ -1,4 +1,5 @@
 # Ignorando arquivos de hot reload.
 .dart_tool
+build
 
 
