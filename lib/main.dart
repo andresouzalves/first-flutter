@@ -7,11 +7,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'DIO.me First Flutter App',
+      title: 'DIO.me First Flutter App', // Modificando o título
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
@@ -34,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      _counter += 1541;
+      _counter += 1541; // Alteração do Counter
     });
   }
 
@@ -49,23 +48,25 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'How many stars you give me?',
+              'How many stars you give me?', // Alteração da mensagem
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context)
+                  .textTheme
+                  .headline1, // Alterando tamanho do texto do counter
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        tooltip: 'More Stars!', // Alterando mensagem da tooltip
         child: const Icon(
-          Icons.star,
-          color: Colors.yellowAccent,
+          Icons.star, // Alterando o ícone para estrela
+          color: Colors.yellowAccent, // Alterando cor do ícone
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
